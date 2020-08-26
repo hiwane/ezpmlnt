@@ -13,8 +13,9 @@ jobs:
         run: |
           ls
           ./html5.sh test5/ok*.html
-          sh -c "! ./html5.sh test5/ng1.html"
-          sh -c "! ./html5.sh test5/ng2.html"
+          for fname in test5/ng*.html; do if ./html5.sh ${fname}; then exit 1; fi; done
+          ./hreftgt.sh testht/ok*.html
+          for fname in testht/ng*.html; do echo ${fname}; if ./hreftgt.sh ${fname}; then exit 1; fi; done
 
 
 
