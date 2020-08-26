@@ -1,0 +1,20 @@
+name: CI
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: valid test
+        run: |
+          ls
+          ./html5.sh test5/ok*.html
+          sh -c "! ./html5.sh test5/ng1.html"
+          sh -c "! ./html5.sh test5/ng2.html"
+
+
+
