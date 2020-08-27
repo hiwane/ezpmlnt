@@ -4,4 +4,4 @@ description: 'ezpmlnt'
 
 runs:
     using: 'ubuntu-latest'
-    msin: 'main.sh'
+    main: 'main.sh'
