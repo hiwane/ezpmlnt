@@ -1,0 +1,7 @@
+name: 'ezpmlnt'
+
+description: 'ezpmlnt'
+
+runs:
+    using: 'ubuntu-latest'
+    msin: 'main.sh'
