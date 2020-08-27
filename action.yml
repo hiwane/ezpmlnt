@@ -3,5 +3,6 @@ name: 'ezpmlnt'
 description: 'ezpmlnt'
 
 runs:
-    using: 'ubuntu-latest'
+    using: 'docker'
+    image: 'alpine:latest'
     main: 'main.sh'
