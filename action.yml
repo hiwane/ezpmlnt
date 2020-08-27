@@ -4,5 +4,4 @@ description: 'ezpmlnt'
 
 runs:
     using: 'docker'
-    image: 'alpine:latest'
-    main: 'main.sh'
+    image: 'Dockerfile'
